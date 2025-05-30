@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media Discovery Platform</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./Assets/icons8-netflix-256.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#" class="logo">MediaLib</a>
+    <input type="checkbox" id="nav-toggle"/>
+    <label for="nav-toggle" class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#trending">Trending</a>
+      <a href="#popular">Popular</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#footer">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <h1 class="hero-title">MediaLib</h1>
+      <div class="hero-subtitle">Your Ultimate Movie & Series Discovery Platform</div>
+      <a href="#trending" class="hero-btn">Explore Trending Movies</a>
+    </div>
+    <div class="hero-right">
+      <!-- Animated SVG -->
+      <svg class="movie-svg" viewBox="0 0 320 320">
+        <ellipse cx="160" cy="160" rx="120" ry="80" fill="#fff" opacity="0.15"/>
+        <rect x="90" y="80" width="140" height="160" rx="24" fill="#ff4c60">
+          <animate attributeName="y" values="80;70;80" dur="2s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="120" y="110" width="80" height="100" rx="12" fill="#fff"/>
+        <circle cx="160" cy="160" r="20" fill="#ff4c60">
+          <animate attributeName="r" values="20;24;20" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <rect x="140" y="190" width="40" height="10" rx="5" fill="#ff4c60"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Trending Movies -->
+  <section id="trending">
+    <div class="section-title">Trending Movies</div>
+    <div class="section-subtitle">Top picks, fresh from the box office</div>
+    <div class="card-list">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="./Assets/img1.jpg" alt="Movie 1"/>
+        <div class="card-content">
+          <div class="card-title">The Lost City</div>
+          <div class="card-desc">A reclusive romance novelist and her cover model get swept up in a jungle adventure.</div>
+        </div>
+        <div class="card-duration">1h 52m</div>
+        <a class="watch-now" href="https://www.netflix.com/" target="_blank">Watch Now</a>
+        <input type="checkbox" class="watchlist-toggle" id="watchlist1"/>
+        <label for="watchlist1" class="watchlist-btn">
+          <i class="fa fa-plus"></i>
+          <i class="fa fa-check"></i>
+        </label>
+      </div>
+      
+      <div class="card">
+        <img src="./Assets/img2.jpg" alt="Movie 2"/>
+        <div class="card-content">
+          <div class="card-title">Edge of Tomorrow</div>
+          <div class="card-desc">A soldier fighting aliens gets to relive the same day over and over again.</div>
+        </div>
+        <div class="card-duration">1h 53m</div>
+        <a class="watch-now" href="https://www.primevideo.com/" target="_blank">Watch Now</a>
+        <input type="checkbox" class="watchlist-toggle" id="watchlist2"/>
+        <label for="watchlist2" class="watchlist-btn">
+          <i class="fa fa-plus"></i>
+          <i class="fa fa-check"></i>
+        </label>
+      </div>
+      
+      <div class="card">
+        <img src="./Assets/img3.jpg" alt="Movie 3"/>
+        <div class="card-content">
+          <div class="card-title">Moonlight</div>
+          <div class="card-desc">A young African-American man grapples with his identity and sexuality while experiencing the everyday struggles of childhood, adolescence, and adulthood.</div>
+        </div>
+        <div class="card-duration">1h 51m</div>
+        <a class="watch-now" href="https://www.hotstar.com/" target="_blank">Watch Now</a>
+        <input type="checkbox" class="watchlist-toggle" id="watchlist3"/>
+        <label for="watchlist3" class="watchlist-btn">
+          <i class="fa fa-plus"></i>
+          <i class="fa fa-check"></i>
+        </label>
+      </div>
+      
+      <div class="card">
+        <img src="./Assets/img4.jpg" alt="Movie 4"/>
+        <div class="card-content">
+          <div class="card-title">No Time To Die</div>
+          <div class="card-desc">James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help.</div>
+        </div>
+        <div class="card-duration">2h 43m</div>
+        <a class="watch-now" href="https://www.primevideo.com/" target="_blank">Watch Now</a>
+        <input type="checkbox" class="watchlist-toggle" id="watchlist4"/>
+        <label for="watchlist4" class="watchlist-btn">
+          <i class="fa fa-plus"></i>
+          <i class="fa fa-check"></i>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular  -->
+  <section id="popular">
+    <div class="section-title">Popular Shows</div>
+    <div class="section-subtitle">Binge-worthy series you can't miss</div>
+    <div class="card-list">
+      
+      <div class="card">
+        <img src="./Assets/img6.jpg" alt="Show 1"/>
+        <div class="card-content">
+          <div class="card-title">Stranger Things</div>
+          <div class="card-desc">Genre: Sci-Fi, Thriller<br>Seasons: 4 | Episodes: 34<br>When a young boy vanishes, a small town uncovers a mystery involving secret experiments.</div>
+        </div>
+        <label for="modal1" class="watch-now" style="bottom:1rem;left:1.2rem;cursor:pointer;">Learn More</label>
+        <input type="checkbox" class="modal-toggle" id="modal1"/>
+        <div class="modal">
+          <div class="modal-content">
+            <label for="modal1" class="modal-close"><i class="fa fa-times"></i></label>
+            <h3>Stranger Things</h3>
+            <p>Set in the 1980s, Stranger Things follows a group of kids as they face supernatural forces, secret government experiments, and the mysterious disappearance of their friend.</p>
+            <a href="https://www.netflix.com/" target="_blank" class="hero-btn" style="margin-top:1rem;">Watch Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="./Assets/img5.jpg" alt="Show 2"/>
+        <div class="card-content">
+          <div class="card-title">Breaking Bad</div>
+          <div class="card-desc">Genre: Crime, Drama<br>Seasons: 5 | Episodes: 62<br>A chemistry teacher turned meth producer partners with a former student.</div>
+        </div>
+        <label for="modal2" class="watch-now" style="bottom:1rem;left:1.2rem;cursor:pointer;">Learn More</label>
+        <input type="checkbox" class="modal-toggle" id="modal2"/>
+        <div class="modal">
+          <div class="modal-content">
+            <label for="modal2" class="modal-close"><i class="fa fa-times"></i></label>
+            <h3>Breaking Bad</h3>
+            <p>Walter White, a high school chemistry teacher, turns to a life of crime after a terminal cancer diagnosis, producing and selling methamphetamine with former student Jesse Pinkman.</p>
+            <a href="https://www.netflix.com/" target="_blank" class="hero-btn" style="margin-top:1rem;">Watch Now</a>
+          </div>
+        </div>
+      </div>
+     
+      <div class="card">
+        <img src="./Assets/img7.jpg" alt="Show 3"/>
+        <div class="card-content">
+          <div class="card-title">The Crown</div>
+          <div class="card-desc">Genre: Drama, History<br>Seasons: 6 | Episodes: 60<br>The political rivalries and romance of Queen Elizabeth II's reign.</div>
+        </div>
+        <label for="modal3" class="watch-now" style="bottom:1rem;left:1.2rem;cursor:pointer;">Learn More</label>
+        <input type="checkbox" class="modal-toggle" id="modal3"/>
+        <div class="modal">
+          <div class="modal-content">
+            <label for="modal3" class="modal-close"><i class="fa fa-times"></i></label>
+            <h3>The Crown</h3>
+            <p>The Crown traces the reign of Queen Elizabeth II, exploring the personal and political events that shaped the second half of the 20th century in Britain.</p>
+            <a href="https://www.netflix.com/" target="_blank" class="hero-btn" style="margin-top:1rem;">Watch Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Reviews -->
+  <section id="reviews">
+    <div class="section-title">User Reviews</div>
+    <div class="section-subtitle">What our users are saying</div>
+    <div class="reviews">
+      <div class="review-cards">
+        <div class="review-card">
+          <img class="review-avatar" src="./Assets/Dp.jpg" alt="User"/>
+          <div class="review-info">
+            <div class="review-name">Aditi Sharma</div>
+            <div class="review-text">Absolutely love the trending section! The UI is clean and easy to navigate.</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <img class="review-avatar" src="./Assets/Dp.jpg" alt="User"/>
+          <div class="review-info">
+            <div class="review-name">Rohan Mehta</div>
+            <div class="review-text">Great platform to discover new movies and shows. The dark mode is a plus!</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <img class="review-avatar" src="./Assets/Dp.jpg" alt="User"/>
+          <div class="review-info">
+            <div class="review-name">Priya Singh</div>
+            <div class="review-text">The reviews section is very helpful. I like the watchlist feature too.</div>
+          </div>
+        </div>
+      </div>
+      <form class="review-form">
+        <input type="text" placeholder="Your Name" required/>
+        <input type="email" placeholder="Your Email" required/>
+        <textarea rows="4" placeholder="Your Review" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Foter -->
+  <footer id="footer">
+    <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <div class="footer-social">
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="footer-links">
+      <a href="#" target="_blank">Terms & Conditions</a>
+      <a href="#" target="_blank">Privacy Policy</a>
+    </div>
+    <div style="color:#888;font-size:0.96rem;">&copy; 2025 MediaLib. All rights reserved.</div>
+  </footer>
+</body>
+</html>
