@@ -22,7 +22,7 @@ This repository contains a responsive, CSS-only media discovery website built wi
 
 ## Demo
 Open the `index.html` file in your browser to view the live site locally.
-Else 
+Else https://vikashgupta16.github.io/KTJ-ASS1/  
 
 ## Technologies & Resources
 - **HTML5** for semantic structure.
