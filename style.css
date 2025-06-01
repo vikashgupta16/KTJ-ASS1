@@ -84,7 +84,7 @@
       .navbar nav {
         position: fixed;
         top: 64px; right: 0;
-        background: var(--card-bg-dark);
+        background: var(--card-bg-light);
         flex-direction: column;
         width: 200px;
         height: 100vh;
